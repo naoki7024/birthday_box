@@ -1,0 +1,79 @@
+
+* {
+    box-sizing: border-box;
+}
+ 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #fff;
+    letter-spacing : 0.2em;
+}
+/* ヘッダー */
+ header {
+    width: 100%;
+    padding: 30px 4% 10px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+
+}
+
+header h1{
+    font-size:40px;
+    font-family: 'Economica', sans-serif;
+    margin: 0; padding: 0;
+    font-size: 30px;
+}
+
+nav {
+    margin: 0 0 0 auto;
+}
+
+
+header a {	
+    text-decoration: none;
+    color: #4b4b4b;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+
+}
+
+header li {
+    margin: 0 0 0 15px;
+    font-size: 14px;
+    
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('/img/birthday__monochromatic.png') ;
+    background-size: cover;   
+
+}
+
+.container a{
+    text-decoration: none;
+}
+
+h2 {
+    margin-top:130px;
+    font-size: 50px;
+    font-weight:bold;
+    color :white;
+    font-family: 'Economica', sans-serif;
+}
+
+
+
