@@ -4,6 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
+
 class CreateBirthdaysTable extends Migration
 {
     /**
@@ -17,8 +18,7 @@ class CreateBirthdaysTable extends Migration
             $table->id();
             $table->integer('user_id');
             $table->string('name');
-            $table->date('month');
-            $table->date('day');
+            $table->date('birthday');
             $table->string('info')->nullable();
             $table->timestamps();
         });
@@ -26,7 +26,7 @@ class CreateBirthdaysTable extends Migration
 
     /**
      * Reverse the migrations.
-     *
+     *wsw
      * @return void
      */
     public function down()
