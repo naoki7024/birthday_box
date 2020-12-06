@@ -1,47 +1,49 @@
 * {
     box-sizing: border-box;
 }
- 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: #fff;
-    letter-spacing : 0.2em;
-}
+/* ボディ全体 */
+
+  body {
+      margin: 0;
+      padding: 0;
+      font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background-color: #fff;
+      letter-spacing : 0.2em;
+  }
 /* ヘッダー */
- header {
-    width: 100%;
-    padding: 30px 4% 10px;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    background-color: transparent;
-}
 
-nav {
-    margin: 0 0 0 auto;
-}
+  header {
+      width: 100%;
+      padding: 30px 4% 10px;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      background-color: transparent;
+  }
 
-header h1 {
-    margin: 0; 
-    padding: 0;
-    font-size: 30px;
-    font-family: 'Economica', sans-serif;
-}
+  nav {
+      margin: 0 0 0 auto;
+  }
 
-header a {	
-    text-decoration: none;
-    color: #4b4b4b;
-    font-weight: 20;
-}
+  header h1 {
+      margin: 0; 
+      padding: 0;
+      font-size: 30px;
+      font-family: 'Economica', sans-serif;
+  }
 
-header ul {
-    list-style: none;
-    margin: 0;
-    display: flex;
+  header a {	
+      text-decoration: none;
+      color: #4b4b4b;
+      font-weight: 20;
+  }
 
-}
+  header ul {
+      list-style: none;
+      margin: 0;
+      display: flex;
+
+  }
 
 header li {
     margin: 0 0 0 15px;
@@ -49,11 +51,39 @@ header li {
     
 }
 
+/* フォーム */
+
+
+.alert {
+  
+  display: inline;
+  color: #FA5C65;
+  margin: 0.3rem;
+  background-color: red;
+  font-size: 20px;
+  font-weight:bold;
+}
+
+.alert li{
+list-style: none;
+}
+
+.form_container {
+  text-align: center;
+  margin-top:50px;
+
+}
+
+.form_container a{
+  text-decoration: none;
+}
+
 .forms {
 	position: relative;
 	width: 40%;
 	margin: 0 auto ;
 }
+
 .forms input[type='text'] {
 	font: 15px/24px sans-serif;
 	box-sizing: border-box;
@@ -61,15 +91,18 @@ header li {
 	letter-spacing: 1px;
 	padding-left: 4em;
 }
+
 .forms input[type='text']:focus {
 	outline: none;
 }
+
 .common {
 	padding: 4px 0;
 	border: 0;
 	border-bottom: 1px solid #1b2538;
 	background-color: transparent;
 }
+
 .common ~ .focus {
 	position: absolute;
 	bottom: 0;
@@ -79,11 +112,13 @@ header li {
 	transition: 0.4s;
 	background-color:  #009966;
 }
+
 .common:focus ~ .focus,
 .forms.common ~ .focus {
 	width: 100%;
 	transition: 0.4s;
 }
+
 .common ~ label {
 	position: absolute;
 	z-index: -1;
@@ -94,6 +129,7 @@ header li {
 	letter-spacing: 0.5px;
 	color: #aaaaaa;
 }
+
 .common:focus ~ label, .forms.common ~ label {
 	font-size: 12px;
 	top: -16px;
@@ -101,10 +137,12 @@ header li {
 	color:  #1b2538;
 }
 
+/* 誕生日一覧 */
 .posts_container{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 60px;
 }
 
 .posts_container a{
@@ -148,20 +186,6 @@ table th.icon{
   .table a{
     text-decoration: none;
     color: #4b4b4b;
-}
-
-.posts_container{
-    margin-top: 60px;
-}
-
-.form_container {
-    text-align: center;
-    margin-top:50px;
-
-}
-
-.form_container a{
-    text-decoration: none;
 }
 
 .alert{
@@ -221,6 +245,7 @@ table th.icon{
     color: 4b4b4b;
   }
 
+  /* 詳細 */
   .profile-card{
     width: 500px;
     border-radius:3px;
@@ -292,7 +317,7 @@ table th.icon{
     text-align: center;
     font-weight: bolder;
   }
-  
+  /* 詳細　ボタン群 */
   .button_group{
     margin-top:50px;
     text-align: center;
@@ -321,5 +346,6 @@ table th.icon{
   .button_wrapper {
     margin-top: 30px;
   }
+
 
 

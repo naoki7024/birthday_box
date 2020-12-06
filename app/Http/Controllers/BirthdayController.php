@@ -25,11 +25,18 @@ class BirthdayController extends Controller
 
     public function store(Request $request)
     {
-        //バリデーション条件
-        $request->validate([
-            'name' => 'required|string',
-            'birthday' => 'required|date_format:Ymd',
-        ]);
+        // バリデーション
+        $this->validate(
+        $request,
+            [
+                'name' => 'required|string',
+                'birthday' => 'required|date_format:Ymd',
+            ],
+            [
+                'name.required' => '文字を入力してください',
+                'birthday.required' => 'フォーマット通りに入力してください',
+            ]
+        );
 
         // フォームから送られてきたデータを保存する
        Birthday::create([
@@ -63,16 +70,25 @@ class BirthdayController extends Controller
 
     public function update(Request $request, $id)
     {
-        $request->validate([
-            'name' => 'required|string',
-            'birthday' => 'required|date_format:Ymd',
-        ]);
+        // バリデーション
+        $this->validate(
+            $request,
+                [
+                    'name' => 'required|string',
+                    'birthday' => 'required|date_format:Ymd',
+                ],
+                [
+                    'name.required' => '文字を入力してください',
+                    'birthday.required' => 'フォーマット通りに入力してください',
+                ]
+            );
 
         $birthdays = Birthday::find($id);
         if (auth()->user()->id != $birthdays->user_id) {
             return redirect(route('birthdays.index'))->with('error', '許可されていない操作です');
         }
 
+        // 更新処理
         $birthdays->update([
             'name' => $request->name,
             'birthday' => $request->birthday,

@@ -15,6 +15,7 @@
         <div class="container">
             @yield('content')
         </div>
-        <script type="text/javascript" src="birthday.js"></script>
+
+     <script type="text/javascript" src="js/birthday.js"></script>
     </body>
 </html>
