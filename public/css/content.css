@@ -26,7 +26,6 @@ body {
 }
  
 /* ヘッダー */
-
 header {
   width: 100%;
   padding: 30px 4% 10px;
@@ -361,14 +360,21 @@ table th.icon{
 
 .paginate{
   text-align: center;
+  margin-top:50px;
+
 }
 
 .paginate li  {
   list-style:none;
+  display:inline;
 }
 
 .paginate a {
   text-decoration: none;
   background:white;
+  color:#2E8B57;
+  padding:10px 13px;
+  border:1px #ccc solid;
+  border-radius: 5px / 5px;
 }
 
