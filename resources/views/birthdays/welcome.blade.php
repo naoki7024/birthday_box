@@ -2,9 +2,9 @@
 <html lang="ja">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Birthday Box</title>
         <link rel="stylesheet" href="{{asset('css/welcome.css') }}">
+        <link rel="shortcut icon" href="{{ asset('/favicon.ico') }}">
         <link href="https://fonts.googleapis.com/css?family=Economica:700" rel="stylesheet">
     </head>
     <body>

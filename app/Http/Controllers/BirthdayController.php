@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 use App\Birthday;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Log;
 
 class BirthdayController extends Controller
 {
@@ -18,7 +17,7 @@ class BirthdayController extends Controller
         if (Auth::check()) {
             return view('birthdays.index');
         } else {
-            // ログインしていなかったら、Login画面を表示
+        // ログインしていなかったら、Login画面を表示
             return view('auth/login');
         }
     }
@@ -31,10 +30,12 @@ class BirthdayController extends Controller
             [
                 'name' => 'required|string',
                 'birthday' => 'required|date_format:Ymd',
+                'info' => 'required|string',
             ],
             [
-                'name.required' => '文字を入力してください',
-                'birthday.required' => 'フォーマット通りに入力してください',
+                'name.required' => '「お相手」には文字を入力してください',
+                'birthday.required' => '「生まれ」をフォーマット通りに入力してください',
+                'info.required' => '「メモ」には文字を入力してください',
             ]
         );
 
@@ -51,7 +52,7 @@ class BirthdayController extends Controller
         return redirect()->route('birthdays.index',$user); 
     }
 
-    //詳細を見る
+        //詳細を見る
     public function show($id) {
         $birthdays = Birthday::find($id);
         // 詳細ページへ
@@ -60,6 +61,7 @@ class BirthdayController extends Controller
 
     public function edit($id) 
     {
+        // 詳細画面を表示
         $birthdays = Birthday::find($id);
         if (auth()->user()->id != $birthdays->user_id) 
         {
@@ -84,6 +86,7 @@ class BirthdayController extends Controller
             );
 
         $birthdays = Birthday::find($id);
+        // ログインしているかチェックする
         if (auth()->user()->id != $birthdays->user_id) {
             return redirect(route('birthdays.index'))->with('error', '許可されていない操作です');
         }
@@ -97,8 +100,8 @@ class BirthdayController extends Controller
         return redirect()->route('birthdays.show' , $id);
     }
 
-    //削除
     public function destroy($id){
+        //削除処理
         $birthdays = Birthday::find($id);
         $birthdays->delete();
         return redirect()->route('birthdays.index'); 

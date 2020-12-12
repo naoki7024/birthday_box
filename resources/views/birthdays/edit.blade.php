@@ -45,7 +45,7 @@
     <br>
     <!-- 生年月日 -->
     <div class="forms">
-      <label>生まれ</label>
+      <label>生まれ   （例）20210101</label>
       <input type="text" name="birthday" id ="birthdays" class="common" value="{{old('birthday') ?? $birthdays->birthday}}">
       <span class="focus"></span>
     </div>
