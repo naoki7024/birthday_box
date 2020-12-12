@@ -60,8 +60,8 @@ header li {
     align-items: center;
     height: 100vh;
     background-image: url('/img/birthday__monochromatic.png') ;
-    background-size: cover;   
-
+    background-size: cover;  
+    text-align: center; 
 }
 
 .container a{

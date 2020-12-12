@@ -359,5 +359,16 @@ table th.icon{
   margin-top: 30px;
 }
 
+.paginate{
+  text-align: center;
+}
 
+.paginate li  {
+  list-style:none;
+}
+
+.paginate a {
+  text-decoration: none;
+  background:white;
+}
 

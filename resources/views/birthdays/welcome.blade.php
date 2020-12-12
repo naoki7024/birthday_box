@@ -36,7 +36,7 @@
         
         <section class="wrapper">
             <div class="container">
-            <a href="/"　class="main_logo"><h2> Birthday Box</h2></a>
+                <h2> Birthday Box</h2>
             </div>
         </section>
     </body>

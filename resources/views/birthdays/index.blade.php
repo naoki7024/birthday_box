@@ -72,14 +72,16 @@
         <td>{{$data->birthday}}</td>
         <td>
         <a href="{{ route ('birthdays.show', $data->id)}}" id="button1">詳細</a>
-        <a href="{{ route ('birthdays.destroy', $data->id)}}" class="button2">削除</a>
+        <a href="{{ route ('birthdays.destroy', $data->id)}}" id="button2">削除</a>
       </td>
       </tr>
       @endforeach
     </tbody>
   </table>
 </div>
-<!-- <div>{{ $datas->links() }}</div> -->
+  <div class="paginate">
+   {{ $datas->links() }}
+  </div>
 @endsection
   
   
