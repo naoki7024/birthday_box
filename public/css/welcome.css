@@ -20,7 +20,6 @@ body {
     background-color: transparent;
     position: fixed;
     top: 0;
-
 }
 
 header h1{
@@ -76,5 +75,9 @@ h2 {
     font-family: 'Economica', sans-serif;
 }
 
-
-
+@media screen and (max-width:480px) {
+    /*　画面サイズが480px以下の場合ここの記述が適用される　*/
+    header {
+        color:black;
+    }
+}

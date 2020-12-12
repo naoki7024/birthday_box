@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="{{ asset('/favicon.ico') }}">
     <link href="https://fonts.googleapis.com/css?family=Economica:700" rel="stylesheet">
 
+    <!-- 部品化 -->
 </head>
     <body>
         <header>

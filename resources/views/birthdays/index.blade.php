@@ -69,7 +69,7 @@
       <tr>
         <th class="icon "></th>
         <th> {{$data->name}}</th>
-        <td>{{$data->birthday}}</td>
+        <td id="birthday">{{$data->birthday}}</td>
         <td>
         <a href="{{ route ('birthdays.show', $data->id)}}" id="button1">詳細</a>
         <a href="{{ route ('birthdays.destroy', $data->id)}}" id="button2">削除</a>

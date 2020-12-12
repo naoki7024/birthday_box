@@ -2,16 +2,19 @@
 <html lang="ja">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
         <title>Birthday Box</title>
         <link rel="stylesheet" href="{{asset('css/welcome.css') }}">
         <link rel="shortcut icon" href="{{ asset('/favicon.ico') }}">
         <link href="https://fonts.googleapis.com/css?family=Economica:700" rel="stylesheet">
     </head>
     <body>
+        <!-- 共通ヘッダー -->
         <header>
             <h1>
              <a href="/"　class="header_logo">Birthday Box</a>  
             </h1>
+        <!-- ログインしている時、していない時で表示を変更させている -->
             <nav class="pc-nav">
                 <ul>
                 @if (Route::has('login'))
@@ -33,7 +36,7 @@
                 </ul>
             </nav>
         </header>
-        
+        <!-- ファーストビュー -->
         <section class="wrapper">
             <div class="container">
                 <h2> Birthday Box</h2>
