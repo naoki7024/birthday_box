@@ -37,10 +37,10 @@
 </div>
 <div class="button_group">
   <a href="{{ route ('birthdays.edit', $birthdays->id)}}" id="button1">変更</a>
+  <a href="{{ route ('birthdays.destroy', $birthdays->id)}}" id="button2">削除</a>
   <a href="{{ route ('birthdays.index')}}" id="button3">戻る</a>
 </div>
   </div>
 </div>
-
   
 

@@ -36,7 +36,7 @@
     <!-- 生年月日 -->
     <div class="forms">
       <input class="common" type="text" name="birthday" placeholder="">
-      <label>生まれ　                 （例）20210101</label>
+      <label>生まれ（例）20210101</label>
       <span class="focus"></span>
     </div>
     <br>
@@ -69,17 +69,18 @@
       <tr>
         <th class="icon "></th>
         <th> {{$data->name}}</th>
-        <td>{{$data->birthday}}</td>
+        <td id="birthday">{{$data->birthday}}</td>
         <td>
         <a href="{{ route ('birthdays.show', $data->id)}}" id="button1">詳細</a>
-        <a href="{{ route ('birthdays.destroy', $data->id)}}" class="button2">削除</a>
       </td>
       </tr>
       @endforeach
     </tbody>
   </table>
-</div>
-<!-- <div>{{ $datas->links() }}</div> -->
+  </div>
+    <div class="paginate">
+    {{ $datas->links() }}
+    </div>
 @endsection
   
   
