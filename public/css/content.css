@@ -21,7 +21,7 @@
     align-items: center;
     background-color: transparent;
   }
-  
+
   nav {
     margin: 0 0 0 auto;
   }
@@ -29,7 +29,7 @@
   header h1 {
     margin: 0; 
     padding: 0;
-    font-size: 30px;
+    font-size: 40px;
     font-family: 'Economica', sans-serif;
   }
   
@@ -227,23 +227,34 @@
   
   #button2{
     color:white;
+    background:  #F43E43;
+    border: solid 2px #F43E43;
+    border-radius: 3px;
+    padding: 10px 15px;
+    transition: .4s;
+  }
+    
+  #button2:hover {
+    background: white;
+    color: #F43E43;
+  }
+
+  #button3{
+    color:white;
     background: #4b4b4b;
     border: solid 2px #4b4b4b;
     border-radius: 3px;
     padding: 10px 15px;
     margin-left: 5px;
-    margin-right:-60px;
     transition: .4s;
-  
-  }
     
-  #button2:hover {
+  }
+  
+  #button3:hover {
     background: white;
-    color: 4b4b4b;
+    color: #4b4b4b;
   }
 
-
-  
   /* 詳細 */
   .profile-card{
     width: 500px;
@@ -326,21 +337,6 @@
     text-decoration: none;
   }
   
-  #button3{
-    color:white;
-    background: #4b4b4b;
-    border: solid 2px #4b4b4b;
-    border-radius: 3px;
-    padding: 10px 15px;
-    margin-left: 5px;
-    transition: .4s;
-    
-  }
-  
-  #button3:hover {
-    background: white;
-    color: #4b4b4b;
-  }
   
   .button_wrapper {
     margin-top: 30px;
@@ -349,7 +345,6 @@
   .paginate{
     text-align: center;
     margin-top:50px;
-    
   }
   
   .paginate li  {
@@ -379,26 +374,15 @@
   .body {
     width:80%;
   }
- 
+
   .table {
-    width: 88%;
+    width: 90%;
   }
 
-  .posts_container{
-    margin:0 auto;
-
+  table th.icon{
+    background-size: 15px;
   }
-  
- .table td {
-    display: block;
-    width: 100%;
-    border-bottom: none;
-  }
-
-  #birthday{
-    margin-left:30px;
-  }
-
+ 
   #button1{
     padding: 6px 13px;
     margin-left: 2px;
@@ -407,12 +391,24 @@
   #button2{
     padding: 6px 13px;
     margin-left: 5px;
-    margin-right:-60px;
-
   }
 
   #button3{
     padding: 6px 13px;
+  }
+
+  .paginate{
+    margin-left: -40px;
+    margin-top:50px;
+  }
+
+  header a {
+    font-size:15px;
+
+  }
+
+  ul a{
+    font-size:7px;
   }
 
 }

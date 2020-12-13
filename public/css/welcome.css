@@ -22,11 +22,10 @@ body {
     top: 0;
 }
 
-header h1{
+#header_logo{
     font-size:40px;
     font-family: 'Economica', sans-serif;
     margin: 0; padding: 0;
-    font-size: 30px;
 }
 
 nav {
@@ -77,7 +76,26 @@ h2 {
 
 @media screen and (max-width:480px) {
     /*　画面サイズが480px以下の場合ここの記述が適用される　*/
-    header {
-        color:black;
+    header{
+        width:100%;
     }
+
+    #header_logo{
+     font-size:15px;
+    }
+
+    #pc-nav a{
+        font-size:10px;
+    }
+
+    .container{
+        width:100%;
+        background:url('/img/birthday__monochromatic.png') no-repeat center center ;
+        background-size:contain;
+    }
+
+    h2 {
+        margin-top:55px;
+    }
+
 }

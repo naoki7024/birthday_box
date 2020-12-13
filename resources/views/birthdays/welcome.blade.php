@@ -11,22 +11,20 @@
     <body>
         <!-- 共通ヘッダー -->
         <header>
-            <h1>
-             <a href="/"　class="header_logo">Birthday Box</a>  
-            </h1>
+             <a href="/" id="header_logo">Birthday Box</a>  
         <!-- ログインしている時、していない時で表示を変更させている -->
-            <nav class="pc-nav">
+            <nav id="pc-nav">
                 <ul>
                 @if (Route::has('login'))
                         @auth
-                            <li><a href="{{ route('birthdays.index') }}">RECORD ｜</a></li>
+                            <li><a href="{{ route('birthdays.index') }}">RECORD    </a></li>
                             <li>  <a href="{{ route('logout') }}" onclick="event.preventDefault();
                                     document.getElementById('logout-form').submit();">
                                     LOGOUT</a></li>
                                         <form id='logout-form' action="{{ route('logout')}}" method="POST" style="display: none;">
                                         {{@csrf_field()}}
                         @else
-                            <li><a href="{{ route('login') }}"> LOGIN  |  </a></li>
+                            <li><a href="{{ route('login') }}"> LOGIN      </a></li>
 
                             @if (Route::has('register'))
                                <li><a href="{{ route('register') }}">REGISTER</a><li>
