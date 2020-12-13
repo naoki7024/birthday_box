@@ -10,6 +10,7 @@ class BirthdayController extends Controller
     public function index() {
         // ユーザーごとのデータの取り出し
         $datas = Birthday::where('user_id', Auth::user()->id)->paginate(4);
+
         //indexビューへの表示
         return view('birthdays.index', compact('datas'));
 

@@ -1,4 +1,4 @@
-  /* ボディ全体 */
+/* ボディ全体 */
   body {
     margin: 0;
     padding: 0;
@@ -374,8 +374,10 @@
   }
 
   .table {
+
     width: 95%;
   }
+
 
   table th.icon{
     background-size: 15px;
@@ -408,7 +410,4 @@
   ul a{
     font-size:7px;
   }
-
 }
-
-
