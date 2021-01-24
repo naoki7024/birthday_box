@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-        <title>Birthday Box</title>
+        <title>Clinic Box</title>
         <link rel="stylesheet" href="{{asset('css/welcome.css') }}">
         <link rel="shortcut icon" href="{{ asset('/favicon.ico') }}">
         <link href="https://fonts.googleapis.com/css?family=Economica:700" rel="stylesheet">
@@ -11,7 +11,7 @@
     <body>
         <!-- 共通ヘッダー -->
         <header>
-             <a href="/" id="header_logo">Birthday Box</a>  
+             <a href="/" id="header_logo">Clinic Box</a>  
         <!-- ログインしている時、していない時で表示を変更させている -->
             <nav id="pc-nav">
                 <ul>
@@ -37,7 +37,7 @@
         <!-- ファーストビュー -->
         <section class="wrapper">
             <div class="container">
-                <h2> Birthday Box</h2>
+                <h2> Clinic Box</h2>
             </div>
         </section>
     </body>

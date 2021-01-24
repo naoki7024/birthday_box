@@ -1,9 +1,9 @@
 @extends('layouts.layout')
-@section('title', 'Birthday Box')
+@section('title', 'Clinic Box')
 
 <header>
   <h1>
-  <a href="/"　class="header_logo">Birthday Box</a>  
+  <a href="/"　class="header_logo">Clinic Box</a>  
   </h1>
   <nav class="pc-nav">
     <ul>
@@ -29,20 +29,20 @@
     <!-- 名前 -->
     <div class="forms">
       <input class="common" type="text" name="name" placeholder="">
-      <label>お相手</label>
+      <label>クリニック名</label>
       <span class="focus"></span>
     </div>
     <br>
     <!-- 生年月日 -->
     <div class="forms">
       <input class="common" type="text" name="birthday" placeholder="">
-      <label>生まれ（例）20210101</label>
+      <label>通院日（例）20210101</label>
       <span class="focus"></span>
     </div>
     <br>
     <div class="forms">
       <input class="common" type="text" name="info" placeholder="">
-      <label>メモ</label>
+      <label>症状</label>
       <span class="focus"></span>
     </div>
     <div class="button_wrapper">

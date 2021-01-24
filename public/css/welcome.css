@@ -56,10 +56,11 @@ header li {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-image: url('/img/birthday__monochromatic.png') ;
-    background-size: cover;  
+    height:95vh;
+    background:url('/img/Doctor_Monochromatic.png') no-repeat center center  ;
+    background-size:contain;
     text-align: center; 
+    margin-top: 20px;
 }
 
 .container a{
@@ -67,10 +68,10 @@ header li {
 }
 
 h2 {
-    margin-top:130px;
-    font-size: 50px;
+    margin-top:45px;
+    font-size: 100px;
     font-weight:bold;
-    color :white;
+    color :#4b4b4b;
     font-family: 'Economica', sans-serif;
 }
 
@@ -90,7 +91,7 @@ h2 {
 
     .container{
         width:100%;
-        background:url('/img/birthday__monochromatic.png') no-repeat center center ;
+        background:url('/img/Doctor_Monochromatic.png') no-repeat center center ;
         background-size:contain;
     }
 

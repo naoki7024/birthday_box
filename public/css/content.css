@@ -104,7 +104,7 @@
     width: 0;
     height: 2px;
     transition: 0.4s;
-    background-color:  #009966;
+    background-color:  #6594e0;
   }
   
   .common:focus ~ .focus,
@@ -156,7 +156,7 @@
   }
   
   table th.icon{
-    background-image: url(/img/gift.png)
+    background-image: url(/img/病院のアイコン素材.png)
   }
   
   .table{
@@ -165,7 +165,7 @@
   }
   
   .table th{
-    border-bottom: solid 2px #009966;
+    border-bottom: solid 2px #6594e0;
     padding: 10px 0;
   }
   
@@ -191,15 +191,15 @@
     font-weight: bold;
     padding: 10px 30px;
     color: white;
-    border: solid 2px #2E8B57;
-    background: #2E8B57;
+    border: solid 2px #364e96;
+    background: #364e96;
     border-radius: 3px;
     transition: .4s;
   }
   
   .button1:hover {
     background: white;
-    color: #2E8B57;
+    color: #364e96;
     
   }
   
@@ -210,8 +210,8 @@
 
   #button1{
     color:white;
-    background: #2E8B57;
-    border: solid 2px #2E8B57;
+    background: #364e96;
+    border: solid 2px #364e96;
     border-radius: 3px;
     padding: 10px 15px;
     margin-left: 2px;
@@ -220,7 +220,7 @@
 
   #button1:hover {
     background: white;
-    color: #2E8B57;
+    color: #364e96;
   }
   
   #button2{
@@ -353,7 +353,7 @@
   .paginate a {
     text-decoration: none;
     background:white;
-    color:#2E8B57;
+    color:#364e96;
     padding:10px 13px;
     border:1px #ccc solid;
     border-radius: 5px / 5px;

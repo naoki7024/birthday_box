@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Birthday Box</title>
+    <title>Clinic Box</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -22,7 +22,7 @@
 <body>
         <header>
             <h1>
-             <a href="/"　class="header_logo">Birthday Box</a>  
+             <a href="/"　class="header_logo">Clinic Box</a>  
             </h1>
             <nav class="pc-nav">
                 <ul>

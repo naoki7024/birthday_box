@@ -4,7 +4,7 @@
 
 <header>
   <h1>
-  <a href="/"　class="header_logo">Birthday Box</a>  
+  <a href="/"　class="header_logo">Clinic Box</a>  
   </h1>
   <nav class="pc-nav">
     <ul>
@@ -26,7 +26,7 @@
 <div class="profile-card">
   <div class="profile-card__inner">
   <div class="profile-thumb">
-    <img src="/img/gift.png" alt="アイコン">
+    <img src="/img/病院のアイコン素材.png" alt="アイコン">
   </div>
   <div class="profile-content">
     <span class="profile-name">{{$birthdays->name}}</span>
